@@ -89,10 +89,10 @@ abstract class Application
 		});
 	}
 
-	public function create( $className )
+	public function create( ...$classNames )
 	{
-		foreach( func_get_args() as $_className ){
-			$this->container->get( $_className );
+		foreach( $classNames as $className ){
+			$this->container->get( $className );
 		}
 	}
 }
