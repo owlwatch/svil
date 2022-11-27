@@ -48,6 +48,21 @@ abstract class Application
 	}
 
 	/**
+	 * Shortcut for the "get" method
+	 *
+	 * @param string $name Entry name or a class name.
+	 *
+	 * @throws DependencyException Error while resolving the entry.
+	 * @throws NotFoundException No entry found for the given name.
+	 * @throws MissingContainerException The container was not created with the `configure` function
+	 * @return mixed
+	 */
+	public function init($name)
+	{
+		return $this->get($name);
+	}
+
+	/**
 	 * Call the given function using the given parameters.
 	 *
 	 * Missing parameters will be resolved from the container.
