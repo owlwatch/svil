@@ -16,4 +16,4 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-define( 'SVIL_VERSION', '1.0.0' );
+define( 'SVIL_VERSION', '1.0.1' );

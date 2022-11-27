@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a
+class ComposerStaticInit12575f1ea948f74878fb65f44c8faf22
 {
     public static $files = array (
-        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
+        'e14b09384bdcbfc35498a9acea869d74' => __DIR__ . '/../..' . '/lib/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -22,9 +22,9 @@ class ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a
             'Psr\\Container\\' => 14,
             'PhpDocReader\\' => 13,
         ),
-        'O' => 
+        'L' => 
         array (
-            'Opis\\Closure\\' => 13,
+            'Laravel\\SerializableClosure\\' => 28,
         ),
         'I' => 
         array (
@@ -53,9 +53,9 @@ class ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
         ),
-        'Opis\\Closure\\' => 
+        'Laravel\\SerializableClosure\\' => 
         array (
-            0 => __DIR__ . '/..' . '/opis/closure/src',
+            0 => __DIR__ . '/..' . '/laravel/serializable-closure/src',
         ),
         'Invoker\\' => 
         array (
@@ -74,9 +74,9 @@ class ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit630f80cb7cbb12ac3c216e985b13f51a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit12575f1ea948f74878fb65f44c8faf22::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit12575f1ea948f74878fb65f44c8faf22::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit12575f1ea948f74878fb65f44c8faf22::$classMap;
 
         }, null, ClassLoader::class);
     }

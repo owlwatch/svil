@@ -24,51 +24,51 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '426a556d8f066643e4eea5947aa48ed1caabbcc3',
     'name' => 'owlwatch/svil',
   ),
   'versions' => 
   array (
-    'opis/closure' => 
+    'laravel/serializable-closure' => 
     array (
-      'pretty_version' => '3.6.1',
-      'version' => '3.6.1.0',
+      'pretty_version' => 'v1.2.2',
+      'version' => '1.2.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5',
+      'reference' => '47afb7fae28ed29057fdca37e16a84f90cc62fae',
     ),
     'owlwatch/svil' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '426a556d8f066643e4eea5947aa48ed1caabbcc3',
     ),
     'php-di/invoker' => 
     array (
-      'pretty_version' => '2.2.0',
-      'version' => '2.2.0.0',
+      'pretty_version' => '2.3.3',
+      'version' => '2.3.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e08a7c87068daeaeef464b95d81643ea530bc535',
+      'reference' => 'cd6d9f267d1a3474bdddf1be1da079f01b942786',
     ),
     'php-di/php-di' => 
     array (
-      'pretty_version' => '6.3.0',
-      'version' => '6.3.0.0',
+      'pretty_version' => '6.4.0',
+      'version' => '6.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '955cacea6b0beaba07e8c11b8367f5b3d5abe89f',
+      'reference' => 'ae0f1b3b03d8b29dff81747063cbfd6276246cc4',
     ),
     'php-di/phpdoc-reader' => 
     array (
@@ -81,12 +81,12 @@ private static $installed = array (
     ),
     'psr/container' => 
     array (
-      'pretty_version' => '1.0.0',
-      'version' => '1.0.0.0',
+      'pretty_version' => '1.1.2',
+      'version' => '1.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
+      'reference' => '513e0666f7216c7459170d56df27dfcefe1689ea',
     ),
     'psr/container-implementation' => 
     array (
@@ -97,12 +97,12 @@ private static $installed = array (
     ),
     'psr/log' => 
     array (
-      'pretty_version' => '1.1.3',
-      'version' => '1.1.3.0',
+      'pretty_version' => '1.1.4',
+      'version' => '1.1.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+      'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
     ),
   ),
 );

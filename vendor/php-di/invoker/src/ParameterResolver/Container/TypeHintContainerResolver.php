@@ -41,16 +41,19 @@ class TypeHintContainerResolver implements ParameterResolver
                 // No type
                 continue;
             }
-            if ($parameterType->isBuiltin()) {
-                // Primitive types are not supported
-                continue;
-            }
             if (! $parameterType instanceof ReflectionNamedType) {
                 // Union types are not supported
                 continue;
             }
+            if ($parameterType->isBuiltin()) {
+                // Primitive types are not supported
+                continue;
+            }
 
             $parameterClass = $parameterType->getName();
+            if ($parameterClass === 'self') {
+                $parameterClass = $parameter->getDeclaringClass()->getName();
+            }
 
             if ($this->container->has($parameterClass)) {
                 $resolvedParameters[$index] = $this->container->get($parameterClass);

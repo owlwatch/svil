@@ -76,6 +76,8 @@ abstract class Application
 
 	public function create( $className )
 	{
-		$this->container->get( $className );
+		foreach( func_get_args() as $_className ){
+			$this->container->get( $_className );
+		}
 	}
 }

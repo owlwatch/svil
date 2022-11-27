@@ -30,16 +30,19 @@ class TypeHintResolver implements ParameterResolver
                 // No type
                 continue;
             }
-            if ($parameterType->isBuiltin()) {
-                // Primitive types are not supported
-                continue;
-            }
             if (! $parameterType instanceof ReflectionNamedType) {
                 // Union types are not supported
                 continue;
             }
+            if ($parameterType->isBuiltin()) {
+                // Primitive types are not supported
+                continue;
+            }
 
             $parameterClass = $parameterType->getName();
+            if ($parameterClass === 'self') {
+                $parameterClass = $parameter->getDeclaringClass()->getName();
+            }
 
             if (array_key_exists($parameterClass, $providedParameters)) {
                 $resolvedParameters[$index] = $providedParameters[$parameterClass];
