@@ -3,7 +3,6 @@
 namespace Svil\PostType;
 
 use Svil\Util\Inflect;
-use Svil\PostType\PostTypeException;
 
 /**
  * 
@@ -20,7 +19,7 @@ abstract class AbstractPostType
 	{
         $this->setup();
 		if( !defined( 'static::POST_TYPE' ) ){
-			throw new PostTypeException( PostTypeException::MISSING_POST_TYPE );
+			throw new MissingPostTypeException();
 		}
 		add_action( 'init', [$this, 'register'], 3 );
 		$this->init();
